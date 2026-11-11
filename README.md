@@ -115,6 +115,7 @@ Alle begleitenden Artefakte, Softwarediagramme, Spezifikationen und Prüfbericht
 
 ## Projekt- und Repository-Struktur
 
+```text
 sign_app/
 ├── backend/                   # Python-FastAPI-Backend & Machine-Learning-Pipeline
 │   ├── app/                   # API-Routen, Inferenz-Dienste & Konfiguration
@@ -130,7 +131,7 @@ sign_app/
 ├── Dokumentation/             # Ausführliche technische Dokumentationen & Anleitungen
 │   └── screenshots/           # Screenshots der App & Pipeline-Visualisierungen
 └── README.md                  # Zentrale Projektübersicht
-
+```
 
 ---
 
