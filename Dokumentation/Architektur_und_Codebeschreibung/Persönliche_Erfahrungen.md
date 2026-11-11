@@ -168,6 +168,7 @@ Basierend auf den gesamten gesammelten Erfahrungen lassen sich folgende Kernempf
 
 
 Fazit
+
 Die Entwicklung eines Gebärdensprach-Übersetzungsmodells ist ein komplexes Unterfangen, bei dem die Qualität und Quantität der Trainingsdaten, die Validität der Testdaten, eine durchdachte Datenverarbeitungsarchitektur, die effiziente Handhabung der Videolängen, eine klare Benutzerführung und die Beachtung von Bibliothekskompatibilitäten eine zentrale Rolle spielen.
 Die anfänglichen Herausforderungen bei der Datenerfassung, der methodische Test über das schrittweise Reduzieren der Klassen (von 7 auf 6, 5 und 4 Wörter), der zunächst gescheiterte Versuch über die reine Erhöhung von Frames und Features, die Aufdeckung der Diskrepanz zwischen FFmpeg-Verarbeitung und OpenCV-Metadaten-Ignorierung sowie die anschließende serverseitige Lagekorrektur (VideoOrientationCorrector, Sprung auf ca. 60 %) und schließlich die detaillierte mathematische Modellierung der relativen Finger- und Mundabstände im InvariantFeatureLayer (Sprung auf 98,00 %) zeichnen einen Entwicklungsprozess nach. Das Projekt belegt, dass nicht blindes Ausprobieren oder das bloße Vergrößern neuronaler Netze, sondern physikalisch und geometrisch fundierte Vorverarbeitungsschritte der Schlüssel zu robuster Gebärdenspracherkennung sind.
 
