@@ -137,8 +137,10 @@ sign_app/
 
 ## Schnellstart (Installation & Ausführung)
 
-### 1. Backend startenVoraussetzungen: 
-Python 3.10 oder 3.11
+### 1. Backend starten
+Voraussetzungen: 
+    Python 3.10 oder 3.11
+    
 1. In das Backend-Verzeichnis wechseln:   
     cd backend
 
