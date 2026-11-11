@@ -2,7 +2,6 @@
 
 &#x09;	Projekt: Sign-Language-App(DGS)
 
-&#x09;				Autor: Semanur 
 
  
 Das Python-Backend bildet die zentrale Verarbeitungs- und Inferenzkomponente der Sign-Language-App. Seine Hauptaufgabe besteht darin, über die Smartphone-Kamera aufgenommene Gebärdensprachvideos entgegenzunehmen, eine mehrstufige Merkmalsextraktion und geometrische Normierung durchzuführen und das Bewegungsmuster mittels eines tiefen neuronalen Netzes zu klassifizieren.
