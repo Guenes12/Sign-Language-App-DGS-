@@ -19,7 +19,7 @@ Dieses Projekt untersucht einen modularen Ansatz auf Basis von Deep-Learning- un
 - Ein zeitbasiertes Bidirektionales LSTM klassifiziert die dynamischen Bewegungsmuster bei geringem Rechenaufwand.
 
 
-Die genaue Architektur des Backends ist in [Backend_Codebeschreibung.md](Dokumentation\Architektur_und_Codebeschreibung\Backend_Codebeschreibung.md) dokumentiert, die mobile Benutzeroberfläche in [Fronted_Codebeschreibung.md](Dokumentation\Architektur_und_Codebeschreibung\Fronted_Codebeschreibung.md).
+Die genaue Architektur des Backends ist in [Backend_Codebeschreibung.md](Dokumentation/Architektur_und_Codebeschreibung/Backend_Codebeschreibung.md) dokumentiert, die mobile Benutzeroberfläche in [Fronted_Codebeschreibung.md](Dokumentation/Architektur_und_Codebeschreibung/Fronted_Codebeschreibung.md).
 
 
 ---
