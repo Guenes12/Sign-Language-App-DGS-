@@ -2,7 +2,6 @@
 
 &#x09;	Projekt: Sign-Language-App(DGS)
 
-&#x09;				Autor: Semanur 
 
  
 Das Flutter-Frontend bildet die mobile Benutzeroberfläche der Sign-Language-App. Die Anwendung ermöglicht es, Gebärdensprachaufnahmen über die Smartphone-Kamera aufzunehmen und zur automatisierten Verarbeitung an einen Python-Server zu übertragen.
