@@ -2,10 +2,10 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_tts/flutter_tts.dart';
-import 'package:sign_app/features/recording/recording_controller.dart';
-import 'package:sign_app/features/recording/models/translation_response.dart';
-import 'package:sign_app/features/recording/services/api_service.dart';
-import 'package:sign_app/features/recording/services/camera_service.dart';
+import 'package:fronted/features/recording/recording_controller.dart';
+import 'package:fronted/features/recording/models/translation_response.dart';
+import 'package:fronted/features/recording/services/api_service.dart';
+import 'package:fronted/features/recording/services/camera_service.dart';
 class FakeCameraService extends CameraService {
  bool recordingStarted = false;
  bool shouldFailStart = false;

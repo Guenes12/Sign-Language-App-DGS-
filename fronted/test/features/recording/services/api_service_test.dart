@@ -3,7 +3,7 @@ import 'package:camera/camera.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
-import 'package:sign_app/features/recording/services/api_service.dart';
+import 'package:fronted/features/recording/services/api_service.dart';
 void main() {
  late Directory tempDirectory;
  late File testVideo;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sign_app/features/home/home_screen.dart';
-import 'package:sign_app/features/onboarding/onboarding_screen.dart';
+import 'package:fronted/features/home/home_screen.dart';
+import 'package:fronted/features/onboarding/onboarding_screen.dart';
 
 void main() {
 
