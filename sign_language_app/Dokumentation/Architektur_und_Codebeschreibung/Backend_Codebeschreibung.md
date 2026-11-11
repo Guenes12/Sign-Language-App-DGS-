@@ -5,7 +5,7 @@
 &#x09;				Autor: Semanur 
 
  
-Das Python-Backend bildet die zentrale Verarbeitungs- und Inferenzkomponente der Sign-App. Seine Hauptaufgabe besteht darin, über die Smartphone-Kamera aufgenommene Gebärdensprachvideos entgegenzunehmen, eine mehrstufige Merkmalsextraktion und geometrische Normierung durchzuführen und das Bewegungsmuster mittels eines tiefen neuronalen Netzes zu klassifizieren.
+Das Python-Backend bildet die zentrale Verarbeitungs- und Inferenzkomponente der Sign-Language-App. Seine Hauptaufgabe besteht darin, über die Smartphone-Kamera aufgenommene Gebärdensprachvideos entgegenzunehmen, eine mehrstufige Merkmalsextraktion und geometrische Normierung durchzuführen und das Bewegungsmuster mittels eines tiefen neuronalen Netzes zu klassifizieren.
  
 Als Ergebnis liefert das Backend die erkannte Gebärde sowie den zugehörigen Konfidenzwert im schlanken JSON-Format an das mobile Endgerät zurück.
  
@@ -305,7 +305,7 @@ Diagnostics & Tests   | tests/, training/evaluate.py          | Unit-Tests, Güt
  
 31. Zusammenfassung
  
-Das Python-Backend der Sign-App kombiniert eine schlanke, asynchrone REST-Schnittstelle mit einer robusten Vorverarbeitungs- und Deep-Learning-Pipeline.
+Das Python-Backend der Sign-Language-App kombiniert eine schlanke, asynchrone REST-Schnittstelle mit einer robusten Vorverarbeitungs- und Deep-Learning-Pipeline.
  
 Durch die zweistufige Merkmalsextraktion – MediaPipe Holistic zur skelettbasierten Reduktion und der InvariantFeatureLayer zur mathematischen Normierung von Handgeometrie, Geschwindigkeiten und Körperrelationen – wird eine hohe Erkennungsgenauigkeit bei minimalem Trainingsaufwand erreicht.
  

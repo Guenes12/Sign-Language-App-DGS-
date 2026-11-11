@@ -40,7 +40,7 @@ Für die Ausführung der Flutter-Applikation auf einem physischen Android-Endger
 - Netzwerk-Konfiguration (IP-Adresse hinterlegen):
     - Rechner und Mobiltelefon müssen sich im selben lokalen Netzwerk (WLAN) befinden.
     - Die IPv4-Adresse des Rechners ermitteln (z. B. über den Befehl ipconfig unter Windows).
-    - In der Konfigurationsdatei der mobilen Applikation (frontend/sign_app/lib/config/app_config.dart) die ermittelte IP-Adresse eintragen:
+    - In der Konfigurationsdatei der mobilen Applikation (frontend/lib/config/app_config.dart) die ermittelte IP-Adresse eintragen:
       static const String serverIp = '<IP-ADRESSE_DES_RECHNERS>';
  
  
@@ -56,7 +56,7 @@ Nach dem Start ist der Server unter Port 8000 aktiv. Die interaktive API-Dokumen
 2.3 Starten der mobilen Applikation
  
 Sobald der Backend-Server läuft, wird die mobile Anwendung kompiliert und auf das verbundene Mobiltelefon übertragen:
-- Arbeitsverzeichnis: frontend/sign_app
+- Arbeitsverzeichnis: frontend
 - Ausführungsbefehl: flutter run
  
  

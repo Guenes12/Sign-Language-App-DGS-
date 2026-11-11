@@ -5,7 +5,7 @@
 &#x09;				Autor: Semanur 
 
  
-Das Flutter-Frontend bildet die mobile Benutzeroberfläche der Sign-App. Die Anwendung ermöglicht es, Gebärdensprachaufnahmen über die Smartphone-Kamera aufzunehmen und zur automatisierten Verarbeitung an einen Python-Server zu übertragen.
+Das Flutter-Frontend bildet die mobile Benutzeroberfläche der Sign-Language-App. Die Anwendung ermöglicht es, Gebärdensprachaufnahmen über die Smartphone-Kamera aufzunehmen und zur automatisierten Verarbeitung an einen Python-Server zu übertragen.
  
 Der Server analysiert das aufgenommene Video und liefert das erkannte Ergebnis zusammen mit einem Konfidenzwert zurück. Das Flutter-Frontend stellt diese Informationen anschließend übersichtlich dar. Zusätzlich besteht die Möglichkeit, das erkannte Ergebnis über eine Text-to-Speech-Funktion ausgeben zu lassen.
  
@@ -336,6 +336,6 @@ time_formatter        | Wiederverwendbare Zeitformatierungslogik
  
 33. Zusammenfassung
  
-Das Flutter-Frontend der Sign-App zeichnet sich durch eine saubere funktionale Trennung zwischen Benutzeroberfläche, Steuerungslogik und technischen Diensten aus.
+Das Flutter-Frontend der Sign-Language-App zeichnet sich durch eine saubere funktionale Trennung zwischen Benutzeroberfläche, Steuerungslogik und technischen Diensten aus.
  
 Durch die Kapselung hardwarenaher Funktionen in dedizierten Services und die strikte Typisierung der Netzwerkdatenmodelle bleibt die App stabil, performant und leicht wartbar. Die konsequente Unterstützung von Dependency Injection und automatisierten Unit- sowie Widget-Tests stellt eine hohe Softwarequalität sicher und bietet eine solide wissenschaftliche Basis für zukünftige funktionale Erweiterungen.
