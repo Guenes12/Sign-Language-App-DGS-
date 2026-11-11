@@ -129,7 +129,7 @@ sign_app/
 │   └── pubspec.yaml           # Flutter-Projektkonfiguration
 │├── Videos_vobereiten/        # Hilfsskript zur Datensatzaufnahme & Vorbereitung
 ├── Dokumentation/             # Ausführliche technische Dokumentationen & Anleitungen
-│   └── screenshots/           # Screenshots der App & Pipeline-Visualisierungen
+│   └── screenshots/           # Screenshots der App
 └── README.md                  # Zentrale Projektübersicht
 ```
 
