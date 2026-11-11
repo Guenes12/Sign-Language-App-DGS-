@@ -82,11 +82,21 @@ Um Bildrauschen und Hintergrundinformationen zu eliminieren, wird das Video auf 
 - **Geometrische Normalisierung:** Alle Punkte werden auf den Mittelpunkt zwischen linker und rechter Schulter zentriert und durch die Schulterbreite skaliert.
 - **Biomechanische Invarianzschicht:** Ein maßgeschneiderter Keras-Layer berechnet 159 Merkmale (relative Fingerabstände, lokale Handformen, Richtungsgeschwindigkeiten und vertikale Ebenen).
 
+---
+
 ### Klassifikation & Modellverwaltung
 Die Sequenzklassifikation erfolgt über ein spezialisiertes neuronales Netzwerk:
 - **Bidirektionale LSTMs:** Zwei gestapelte Bi-LSTM-Schichten erfassen den zeitlichen Kontext sowohl vorwärts als auch rückwärts.
-- **Peak-Aware Temporal Pooling:** Kombiniert Global-Max-Pooling (zur Erfassung des prägnantesten Bewegungshöhepunkts) mit Global-Average-Pooling (Kontextinformation).- **Integrierte Metadaten:** Die Datei gesture_model.keras bündelt Modellarchitektur, trainierte Gewichte und das Klassenmapping (classes.json) in einem versionssicheren Archiv.
+- **Peak-Aware Temporal Pooling:** Kombiniert Global-Max-Pooling (zur Erfassung des prägnantesten Bewegungshöhepunkts) mit Global-Average-Pooling (Kontextinformation).
+- **Integrierte Metadaten:** Die Datei gesture_model.keras bündelt Modellarchitektur, trainierte Gewichte und das Klassenmapping (classes.json) in einem versionssicheren Archiv.
 
+---
+
+### Datensatz-Vorbereitung & Datenaugmentation (`video_preparation/`)
+Für das Training eines robusten neuronalen Netzes ist eine ausreichende Datenvarianz erforderlich. Im Verzeichnis [`Videos_vorbereiten/`](Videos_vorbereiten/) steht die automatisierte Batch-Datei (`.bat`) bereit, um Rohaufnahmen effizient zu verarbeiten und zu vervielfachen:
+- **Automatisierte Datenvervielfachung:** Mittels bereitgestelltem Batch-Skript können bestehende Aufnahmevideos durch gezielte Transformationen (z. B. leichte Geschwindigkeitsvariationen, Spiegelungen und zeitliche Verschiebungen) künstlich augmentiert und vervielfacht werden.
+- **Vorbereitung für das Modelltraining:** Das Skript standardisiert Rohvideos vor der Extraktion, sodass ein balancierter Trainingsdatensatz für alle 7 Gebärdenklassen erzeugt werden kann.
+ 
 ---
 
 ## Dokumentation & Spezifikation
