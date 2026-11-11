@@ -19,29 +19,17 @@ Dieses Projekt untersucht einen modularen Ansatz auf Basis von Deep-Learning- un
 - Ein zeitbasiertes Bidirektionales LSTM klassifiziert die dynamischen Bewegungsmuster bei geringem Rechenaufwand.
 
 
-Die genaue Architektur des Backends ist in Dokumentation\Architektur_und_Codebeschreibung\Backend_Codebeschreibung.md dokumentiert, die mobile Benutzeroberfläche in Dokumentation\Architektur_und_Codebeschreibung\Fronted_Codebeschreibung.md.
+Die genaue Architektur des Backends ist in [Dokumentation\Architektur_und_Codebeschreibung\Backend_Codebeschreibung.md]Dokumentation\Architektur_und_Codebeschreibung\Backend_Codebeschreibung.md dokumentiert, die mobile Benutzeroberfläche in [Dokumentation\Architektur_und_Codebeschreibung\Fronted_Codebeschreibung.md]Dokumentation\Architektur_und_Codebeschreibung\Fronted_Codebeschreibung.md.
 
 
 ---
 
-### Unterstützte Gebärden (Klassen)
-Der aktuelle Modellstand (`gesture_model.keras`) wurde auf 7 isolierte Gebärden der Deutschen Gebärdensprache trainiert und evaluiert:
-- `Angst`
-- `danke`
-- `essen`
-- `ja`
-- `keineAhnung`
-- `nein`
-- `not`
-
-
----
 
 ## Systemüberblick
 
 Der Benutzer zeichnet eine Gebärde mit der mobilen Flutter-App auf. Die Aufnahme wird über eine HTTP-Multipart-Schnittstelle an das FastAPI-Backend übertragen. Das Backend führt eine mehrstufige Vorverarbeitung und Merkmalsextraktion durch, übergibt die bereinigte Merkmalsmatrix an das neuronale Netz und sendet die erkannte Gebärde zusammen mit einem Konfidenzwert an das Smartphone zurück.
 
-
+```text
 [ Benutzer / Smartphone ]        
     │  (Zeichnet Gebärde auf)        
     ▼
@@ -58,6 +46,7 @@ Der Benutzer zeichnet eine Gebärde mit der mobilen Flutter-App auf. Die Aufnahm
     ▼  
     JSON-Antwort: {"label": "danke", "confidence": 0.9852}                      (""beispielhaft dargestellt"")
 [ Benutzeroberfläche (Ergebnisanzeige) ]
+```
 
 ---
 
@@ -71,6 +60,17 @@ Das Flutter-Frontend stellt eine zielgerichtete Benutzeroberfläche bereit:
 - **Direkte Ergebnisanzeige:** Präsentiert das erkannte Wort und die zugehörige statistische Konfidenz unmittelbar nach Eingang der Serverantwort.
 
 
+### Unterstützte Gebärden (Klassen)
+Der aktuelle Modellstand (gesture_model.keras) wurde auf 7 isolierte Gebärden der Deutschen Gebärdensprache trainiert und evaluiert:
+- Angst
+- danke
+- essen
+- ja
+- keineAhnung
+- nein
+- not
+
+
 ### Automatische Bildkorrektur & zeitliche Normierung
 Smartphones speichern Videos je nach Haltung oft mit abweichenden Rotationswinkeln ab:
 - **Anatomische Lagekorrektur:** Das Backend prüft Stichprobenbilder über MediaPipe Pose auf die Lage der Schulterlinie und Kopfposition. Verdrehte Videos (0°, 90°, 180°, 270°) werden vor der Merkmalsextraktion automatisch aufrecht gedreht.
@@ -82,11 +82,32 @@ Um Bildrauschen und Hintergrundinformationen zu eliminieren, wird das Video auf 
 - **Geometrische Normalisierung:** Alle Punkte werden auf den Mittelpunkt zwischen linker und rechter Schulter zentriert und durch die Schulterbreite skaliert.
 - **Biomechanische Invarianzschicht:** Ein maßgeschneiderter Keras-Layer berechnet 159 Merkmale (relative Fingerabstände, lokale Handformen, Richtungsgeschwindigkeiten und vertikale Ebenen).
 
-### Klassifikation & ModellverwaltungDie Sequenzklassifikation erfolgt über ein spezialisiertes neuronales Netzwerk:
+### Klassifikation & Modellverwaltung
+Die Sequenzklassifikation erfolgt über ein spezialisiertes neuronales Netzwerk:
 - **Bidirektionale LSTMs:** Zwei gestapelte Bi-LSTM-Schichten erfassen den zeitlichen Kontext sowohl vorwärts als auch rückwärts.
 - **Peak-Aware Temporal Pooling:** Kombiniert Global-Max-Pooling (zur Erfassung des prägnantesten Bewegungshöhepunkts) mit Global-Average-Pooling (Kontextinformation).- **Integrierte Metadaten:** Die Datei gesture_model.keras bündelt Modellarchitektur, trainierte Gewichte und das Klassenmapping (classes.json) in einem versionssicheren Archiv.
 
 ---
+
+## Dokumentation & Spezifikation
+
+Alle begleitenden Artefakte, Softwarediagramme, Spezifikationen und Prüfberichte der Bachelorarbeit sind zentral im Verzeichnis [`Dokumentation/`](Dokumentation/) hinterlegt:
+
+| Kategorie | Dokument / Artefakt | Beschreibung | Direktlink |
+| :--- | :--- | :--- | :--- |
+| **Anforderungsanalyse** | **Lastenheft & Pflichtenheft** | Fachliche Anforderungen, Systemgrenzen & Kriterienkatalog | [Lastenheft.md](Dokumentation/Technischen_Anforderungen/Technischen_Dokumente/Lastenheft.md) und  [Pflichtenheft.md](Dokumentation/Technischen_Anforderungen/Technischen_Dokumente/Pflichtenheft.md)|
+| **Qualitätssicherung** | **Checkliste & Abnahmetests** | Prüfprotokoll für Systemfunktionalität, Kameraschnittstelle & API | [Checkliste.md](Dokumentation/Technischen_Anforderungen/Technischen_Dokumente/Checkliste.md) |
+| **Software-Architektur** | **Klassendiagramm Backend** | Domänenmodelle, Vorverarbeitungs-Pipelines & Inferenz-Dienste | [Klassendiagramm_backend.png](Dokumentation/Diagramme/Diagramme/Klassendiagramm_backend.png) |
+| **Software-Architektur** | **Klassendiagramm Frontend** | Flutter-Controller, Service-Layer & UI-Zustandsverwaltung | [Klassendiagramm_frontend.png](Dokumentation/Diagramme/Diagramme/Klassendiagramm_frontend.png) |
+| **Dynamik & Verhalten** | **Zustandsdiagramm** | Endlicher Automat der mobilen Aufnahme (`idle`, `recording`, `evaluating`) | [Zustandsdiagramm.png](Dokumentation/Diagramme/Diagramme/Zustandsdiagramm.png) |
+| **Prozessablauf** | **Aktivitäts- / Sequenzdiagramm** | End-to-End-Datenfluss: Videoaufnahme $\rightarrow$ Normalisierung $\rightarrow$ Inferenz | [Sequenzdiagramm.png](Dokumentation/Diagramme/Diagramme/Sequenzdiagramm.png) |
+| **Inbetriebnahme** | **Deployment- & Installationsleitfaden** | Anleitung für Backend-Deployment, Netzwerkkonfiguration & APK-Build | [Deployment(kompakt).png](Dokumentation/Diagramme/Diagramme/Deployment(kompakt).png) und [Deployment(detailliert).png](Dokumentation/Diagramme/Diagramme/Deployment(detailliert).png)|
+| **Bedienung** | **Bedienungsanleitung** | Schritt-für-Schritt-Anleitung zur Nutzung der Anwendung | [Bedienungsanleitung.md](Dokumentation/Architektur_und_Codebeschreibung/Bedienungsanleitung.md) |
+| **Code-Dokumentation** | **Backend Technische Doku** | Vollständige Modulübersicht aller 28 Python-Dateien | [Backend_Codebeschreibung.md](Dokumentation/Architektur_und_Codebeschreibung/Backend_Codebeschreibung.md) |
+| **Code-Dokumentation** | **Frontend Technische Doku** | Vollständige Modulübersicht aller 11 Dart-Dateien | [Fronted_Codebeschreibung.md](Dokumentation/Architektur_und_Codebeschreibung/Fronted_Codebeschreibung.md) |
+
+---
+
 
 ## Projekt- und Repository-Struktur
 
