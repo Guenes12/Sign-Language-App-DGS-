@@ -6,7 +6,7 @@ Das System verbindet eine benutzerfreundliche Smartphone-Oberfläche mit einer i
 
 > **Hinweis zum Projekt:** Bei der Anwendung handelt es sich um einen experimentellen wissenschaftlichen Prototyp zur Evaluierung mobiler Erkennungsmethoden, nicht um ein zertifiziertes medizinisches oder kommerzielles Übersetzungsprodukt.
 
-<!-- Zwei Screenshots nebeneinander: Startseite & Aufnahme/Ergebnis --><p align="center">  <img src="Dokumentation/screenshots/startseite.jpg" width="280" alt="Startseite der App" style="margin-right: 20px;">  <img src="Dokumentation/screenshots/aufnahme.jpg" width="280" alt="Aufnahme und Ergebnisanzeige"></p><p align="center">  <em>Abbildung: Startseite (links) und Aufnahme-/Ergebnisanzeige (rechts) der mobilen Anwendung.</em></p>
+<!-- Zwei Screenshots nebeneinander mit exakt gleicher Höhe für perfektes Alignment --><p align="center">  <img src="Dokumentation/screenshots/startseite.jpg" height="520" alt="Startseite der App" style="margin-right: 20px;">  <img src="Dokumentation/screenshots/aufnahme.jpg" height="520" alt="Aufnahme und Ergebnisanzeige"></p><p align="center">  <em>Abbildung: Startseite (links) und Aufnahme-/Ergebnisanzeige (rechts) der mobilen Anwendung.</em></p>
 
 ## Motivation
 
