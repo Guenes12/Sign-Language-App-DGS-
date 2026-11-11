@@ -4,9 +4,7 @@
 
 &#x09;	Projekt: Sign-Language-App(DGS)
 
-&#x09;				Autor: Semanur 
 
-&#x09;				  Datum: 23.10.2026
 
 
 
