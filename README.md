@@ -93,8 +93,8 @@ Die Sequenzklassifikation erfolgt über ein spezialisiertes neuronales Netzwerk:
 
 Alle begleitenden Artefakte, Softwarediagramme, Spezifikationen und Prüfberichte der Bachelorarbeit sind zentral im Verzeichnis [`Dokumentation/`](Dokumentation/) hinterlegt:
 
-| Kategorie | Dokument / Artefakt | Beschreibung | Direktlink |
-| :--- | :--- | :--- | :--- |
+| Kategorie | Dokument / Artefakt | Format | Beschreibung | Direktlink |
+| :--- | :--- | :--- | :--- | :--- |
 | **Systemarchitektur** | **Gesamtarchitektur** | `.png` | Schichtenmodell: Mobilgerät, HTTP-Schnittstelle, Vorverarbeitung & Inferenz | [Gesamtarchitektur.png](Dokumentation/Gesamtarchitektur.png) |
 | **Systemarchitektur** | **Klassendiagramm Backend** | `.png` | Domänenmodelle, Vorverarbeitungs-Pipelines & Inferenz-Dienste | [Klassendiagramm_Backend.png](Dokumentation/Klassendiagramm_Backend.png) |
 | **Systemarchitektur** | **Klassendiagramm Frontend** | `.png` | Flutter-Controller, Service-Layer & UI-Zustandsverwaltung | [Klassendiagramm_Frontend.png](Dokumentation/Klassendiagramm_Frontend.png) |
@@ -111,7 +111,10 @@ ightarrow$ $159$ Invarianzfeatures | [Datenfluss_und_Merkmalstransformations_pip
 | **Code-Dokumentation** | **Backend Technische Doku** | `.md` | Vollständige Modulübersicht aller 28 Python-Dateien | [Technische_Dokumentation_Backend.md](Dokumentation/Technische_Dokumentation_Backend.md) |
 | **Code-Dokumentation** | **Frontend Technische Doku** | `.md` | Vollständige Modulübersicht aller 11 Dart-Dateien | [Technische_Dokumentation_Frontend.md](Dokumentation/Technische_Dokumentation_Frontend.md) |
 
---- | :--- | :--- | :--- |
+--- 
+
+
+| :--- | :--- | :--- |
 | **Anforderungsanalyse** | **Lastenheft & Pflichtenheft** | Fachliche Anforderungen, Systemgrenzen & Kriterienkatalog | [Lastenheft.pdf](Dokumentation/Lastenheft.pdf) |
 | **Qualitätssicherung** | **Checkliste & Abnahmetests** | Prüfprotokoll für Systemfunktionalität, Kameraschnittstelle & API | [Checkliste.pdf](Dokumentation/Checkliste.pdf) |
 | **Software-Architektur** | **Klassendiagramm Backend** | Domänenmodelle, Vorverarbeitungs-Pipelines & Inferenz-Dienste | [Klassendiagramm_Backend.png](Dokumentation/Klassendiagramm_Backend.png) |
