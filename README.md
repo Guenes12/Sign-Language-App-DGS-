@@ -92,7 +92,7 @@ Die Sequenzklassifikation erfolgt über ein spezialisiertes neuronales Netzwerk:
 
 
 
-### Datensatz-Vorbereitung & Datenaugmentation (`video_preparation/`)
+### Datensatz-Vorbereitung & Datenaugmentation (`Videos_vorbereiten/`)
 Für das Training eines robusten neuronalen Netzes ist eine ausreichende Datenvarianz erforderlich. Im Verzeichnis [`Videos_vorbereiten/`](Videos_vorbereiten/) steht die automatisierte Batch-Datei (`.bat`) bereit, um Rohaufnahmen effizient zu verarbeiten und zu vervielfachen:
 - **Automatisierte Datenvervielfachung:** Mittels bereitgestelltem Batch-Skript können bestehende Aufnahmevideos durch gezielte Transformationen (z. B. leichte Geschwindigkeitsvariationen, Spiegelungen und zeitliche Verschiebungen) künstlich augmentiert und vervielfacht werden.
 - **Vorbereitung für das Modelltraining:** Das Skript standardisiert Rohvideos vor der Extraktion, sodass ein balancierter Trainingsdatensatz für alle 7 Gebärdenklassen erzeugt werden kann.
