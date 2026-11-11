@@ -2,7 +2,7 @@
 
 &#x09;	Projekt: Sign-Language-App(DGS)
 
-&#x09;				Autor: Semanur 
+
 
 
 
