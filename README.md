@@ -103,11 +103,12 @@ Alle begleitenden Artefakte, Softwarediagramme, Spezifikationen und Prüfbericht
 | **Dynamik & Verhalten** | **Zustandsdiagramm** | `.png` | Endlicher Automat der mobilen Aufnahme (`idle`, `recording`, `evaluating`) | [Zustandsdiagramm.png](Dokumentation/Diagramme/Diagramme/Zustandsdiagramm.png) |
 | **Prozessablauf** | **Aktivitäts- / Sequenzdiagramm** | `.png` | End-to-End-Ablauf von Kameraframe-Aufzeichnung bis Inferenzantwort | [Sequenzdiagramm.png](Dokumentation/Diagramme/Diagramme/Sequenzdiagramm.png) |
 | **Anforderungsanalyse** | **Lastenheft & Pflichtenheft** |`.md` | Fachliche Anforderungen, Systemgrenzen & Kriterienkatalog | [Lastenheft.md](Dokumentation/Technische_Anforderungen/Technische_Dokumente/Lastenheft.md) und [Pflichtenheft.md](Dokumentation/Technische_Anforderungen/Technische_Dokumente/Pflichtenheft.md)|
-| **Qualitätssicherung** | **Checkliste & Abnahmetests** | `.md` | Prüfprotokoll für Systemfunktionalität, Kameraschnittstelle & API | [Checkliste.md](Dokumentation/Technischen_Anforderungen/Technische_Dokumente/Checkliste.md) |
+| **Qualitätssicherung** | **Checkliste** | `.md` | Prüfprotokoll für Systemfunktionalität, Kameraschnittstelle & API | [Checkliste.md](Dokumentation/Technische_Anforderungen/Technische_Dokumente/Checkliste.md) |
 | **Inbetriebnahme** | **Deployment- & Installationsleitfaden** | `.png` | Anleitung für Backend-Deployment, Netzwerkkonfiguration & APK-Build | [Deployment(kompakt).png](Dokumentation/Diagramme/Diagramme/Deployment(kompakt).png) und [Deployment(detailliert).png](Dokumentation/Diagramme/Diagramme/Deployment(detailliert).png)|
 | **Bedienung** | **Bedienungsanleitung** | `.md` | Schritt-für-Schritt-Anleitung zur Nutzung der Anwendung | [Bedienungsanleitung.md](Dokumentation/Architektur_und_Codebeschreibung/Bedienungsanleitung.md) |
 | **Code-Dokumentation** | **Backend Technische Doku** | `.md` | Vollständige Modulübersicht aller 28 Python-Dateien | [Technische_Dokumentation_Backend.md](Dokumentation/Architektur_und_Codebeschreibung/Backend_Codebeschreibung.md) |
 | **Code-Dokumentation** | **Frontend Technische Doku** | `.md` | Vollständige Modulübersicht aller 11 Dart-Dateien | [Technische_Dokumentation_Frontend.md](Dokumentation/Architektur_und_Codebeschreibung/Fronted_Codebeschreibung.md) |
+| **Erfahrungsbericht** | **Persönliche Erfahrungen** | `.md` | Herausforderungen während der Implementierung  | [Erfahrungsbericht.md](Dokumentation/Architektur_und_Codebeschreibung/Persönliche_Erfahrungen.md) |
 
 ---
 
@@ -189,5 +190,5 @@ Diese Software ist ein experimenteller Prototyp, der im Rahmen einer Projektarbe
 
 ---
 
-## 
-LizenzDieses Projekt wurde zu akademischen Zwecken erstellt.
+## Lizenz
+Dieses Projekt wurde zu akademischen Zwecken erstellt.
