@@ -97,7 +97,7 @@ Alle begleitenden Artefakte, Softwarediagramme, Spezifikationen und Prüfbericht
 | :--- | :--- | :--- | :--- | :--- |
 | **Systemarchitektur** | **Gesamtarchitektur** | `.png` | Schichtenmodell: Mobilgerät, HTTP-Schnittstelle, Vorverarbeitung & Inferenz | [Gesamtarchitektur.png](Dokumentation/Diagramme/Diagramme/Gesamtarchitektur.png) |
 | **Systemarchitektur** | **Klassendiagramm Backend** | `.png` | Domänenmodelle, Vorverarbeitungs-Pipelines & Inferenz-Dienste | [Klassendiagramm_Backend.png](Dokumentation/Diagramme/Diagramme/Klassendiagramm_backend.png) |
-| **Systemarchitektur** | **Klassendiagramm Frontend** | `.png` | Flutter-Controller, Service-Layer & UI-Zustandsverwaltung | [Klassendiagramm_Frontend.png](Dokumentation/Diagramme/Diagramme/Klassendiagramm_frontend.png) |
+| **Systemarchitektur** | **Klassendiagramm Frontend** | `.png` | Flutter-Controller, Service-Layer & UI-Zustandsverwaltung | [Klassendiagramm_Frontend.png](Dokumentation/Diagramme/Diagramme/Klassendiagramm_fronted) |
 | **Machine Learning** | **Trainingspipeline** | `.png` | Ablauf von Rohvideos über Landmark-Extraktion & Augmentation zum Modellfit | [Trainingspipeline.png](Dokumentation/Diagramme/Diagramme/Trainingspipeline.png) |
 | **Machine Learning** | **Datenfluss & Merkmalstransformation** | `.png` | Transformation: $105$ Rohmerkmale $
 ightarrow$ Normalisierung $
