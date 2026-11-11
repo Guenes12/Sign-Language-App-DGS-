@@ -95,16 +95,33 @@ Alle begleitenden Artefakte, Softwarediagramme, Spezifikationen und Prüfbericht
 
 | Kategorie | Dokument / Artefakt | Beschreibung | Direktlink |
 | :--- | :--- | :--- | :--- |
-| **Anforderungsanalyse** | **Lastenheft & Pflichtenheft** | Fachliche Anforderungen, Systemgrenzen & Kriterienkatalog | [Lastenheft.md](Dokumentation/Technischen_Anforderungen/Technischen_Dokumente/Lastenheft.md) und  [Pflichtenheft.md](Dokumentation/Technischen_Anforderungen/Technischen_Dokumente/Pflichtenheft.md)|
-| **Qualitätssicherung** | **Checkliste & Abnahmetests** | Prüfprotokoll für Systemfunktionalität, Kameraschnittstelle & API | [Checkliste.md](Dokumentation/Technischen_Anforderungen/Technischen_Dokumente/Checkliste.md) |
-| **Software-Architektur** | **Klassendiagramm Backend** | Domänenmodelle, Vorverarbeitungs-Pipelines & Inferenz-Dienste | [Klassendiagramm_backend.png](Dokumentation/Diagramme/Diagramme/Klassendiagramm_backend.png) |
-| **Software-Architektur** | **Klassendiagramm Frontend** | Flutter-Controller, Service-Layer & UI-Zustandsverwaltung | [Klassendiagramm_frontend.png](Dokumentation/Diagramme/Diagramme/Klassendiagramm_frontend.png) |
-| **Dynamik & Verhalten** | **Zustandsdiagramm** | Endlicher Automat der mobilen Aufnahme (`idle`, `recording`, `evaluating`) | [Zustandsdiagramm.png](Dokumentation/Diagramme/Diagramme/Zustandsdiagramm.png) |
-| **Prozessablauf** | **Aktivitäts- / Sequenzdiagramm** | End-to-End-Datenfluss: Videoaufnahme $\rightarrow$ Normalisierung $\rightarrow$ Inferenz | [Sequenzdiagramm.png](Dokumentation/Diagramme/Diagramme/Sequenzdiagramm.png) |
-| **Inbetriebnahme** | **Deployment- & Installationsleitfaden** | Anleitung für Backend-Deployment, Netzwerkkonfiguration & APK-Build | [Deployment(kompakt).png](Dokumentation/Diagramme/Diagramme/Deployment(kompakt).png) und [Deployment(detailliert).png](Dokumentation/Diagramme/Diagramme/Deployment(detailliert).png)|
-| **Bedienung** | **Bedienungsanleitung** | Schritt-für-Schritt-Anleitung zur Nutzung der Anwendung | [Bedienungsanleitung.md](Dokumentation/Architektur_und_Codebeschreibung/Bedienungsanleitung.md) |
-| **Code-Dokumentation** | **Backend Technische Doku** | Vollständige Modulübersicht aller 28 Python-Dateien | [Backend_Codebeschreibung.md](Dokumentation/Architektur_und_Codebeschreibung/Backend_Codebeschreibung.md) |
-| **Code-Dokumentation** | **Frontend Technische Doku** | Vollständige Modulübersicht aller 11 Dart-Dateien | [Fronted_Codebeschreibung.md](Dokumentation/Architektur_und_Codebeschreibung/Fronted_Codebeschreibung.md) |
+| **Systemarchitektur** | **Gesamtarchitektur** | `.png` | Schichtenmodell: Mobilgerät, HTTP-Schnittstelle, Vorverarbeitung & Inferenz | [Gesamtarchitektur.png](Dokumentation/Gesamtarchitektur.png) |
+| **Systemarchitektur** | **Klassendiagramm Backend** | `.png` | Domänenmodelle, Vorverarbeitungs-Pipelines & Inferenz-Dienste | [Klassendiagramm_Backend.png](Dokumentation/Klassendiagramm_Backend.png) |
+| **Systemarchitektur** | **Klassendiagramm Frontend** | `.png` | Flutter-Controller, Service-Layer & UI-Zustandsverwaltung | [Klassendiagramm_Frontend.png](Dokumentation/Klassendiagramm_Frontend.png) |
+| **Machine Learning** | **Trainingspipeline** | `.png` | Ablauf von Rohvideos über Landmark-Extraktion & Augmentation zum Modellfit | [Trainingspipeline.png](Dokumentation/Trainingspipeline.png) |
+| **Machine Learning** | **Datenfluss & Merkmalstransformation** | `.png` | Transformation: $105$ Rohmerkmale $
+ightarrow$ Normalisierung $
+ightarrow$ $159$ Invarianzfeatures | [Datenfluss_und_Merkmalstransformations_pipeline.png](Dokumentation/Datenfluss_und_Merkmalstransformations_pipeline.png) |
+| **Dynamik & Verhalten** | **Zustandsdiagramm** | `.png` | Endlicher Automat der mobilen Aufnahme (`idle`, `recording`, `evaluating`) | [Zustandsdiagramm.png](Dokumentation/Zustandsdiagramm.png) |
+| **Prozessablauf** | **Aktivitäts- / Sequenzdiagramm** | `.png` | End-to-End-Ablauf von Kameraframe-Aufzeichnung bis Inferenzantwort | [Aktivitaetsdiagramm.png](Dokumentation/Aktivitaetsdiagramm.png) |
+| **Anforderungsanalyse** | **Lastenheft & Pflichtenheft** | `.pdf` / `.md` | Fachliche Anforderungen, Systemgrenzen & Kriterienkatalog | [Lastenheft.md](Dokumentation/Lastenheft.md) |
+| **Qualitätssicherung** | **Checkliste & Abnahmetests** | `.pdf` / `.md` | Prüfprotokoll für Systemfunktionalität, Kameraschnittstelle & API | [Checkliste.md](Dokumentation/Checkliste.md) |
+| **Inbetriebnahme** | **Deployment- & Installationsleitfaden** | `.md` | Anleitung für Backend-Deployment, Netzwerkkonfiguration & APK-Build | [Deployment.md](Dokumentation/Deployment.md) |
+| **Bedienung** | **Bedienungsanleitung** | `.md` | Schritt-für-Schritt-Anleitung zur Nutzung der Anwendung | [Bedienungsanleitung.md](Dokumentation/Bedienungsanleitung.md) |
+| **Code-Dokumentation** | **Backend Technische Doku** | `.md` | Vollständige Modulübersicht aller 28 Python-Dateien | [Technische_Dokumentation_Backend.md](Dokumentation/Technische_Dokumentation_Backend.md) |
+| **Code-Dokumentation** | **Frontend Technische Doku** | `.md` | Vollständige Modulübersicht aller 11 Dart-Dateien | [Technische_Dokumentation_Frontend.md](Dokumentation/Technische_Dokumentation_Frontend.md) |
+
+--- | :--- | :--- | :--- |
+| **Anforderungsanalyse** | **Lastenheft & Pflichtenheft** | Fachliche Anforderungen, Systemgrenzen & Kriterienkatalog | [Lastenheft.pdf](Dokumentation/Lastenheft.pdf) |
+| **Qualitätssicherung** | **Checkliste & Abnahmetests** | Prüfprotokoll für Systemfunktionalität, Kameraschnittstelle & API | [Checkliste.pdf](Dokumentation/Checkliste.pdf) |
+| **Software-Architektur** | **Klassendiagramm Backend** | Domänenmodelle, Vorverarbeitungs-Pipelines & Inferenz-Dienste | [Klassendiagramm_Backend.png](Dokumentation/Klassendiagramm_Backend.png) |
+| **Software-Architektur** | **Klassendiagramm Frontend** | Flutter-Controller, Service-Layer & UI-Zustandsverwaltung | [Klassendiagramm_Frontend.png](Dokumentation/Klassendiagramm_Frontend.png) |
+| **Dynamik & Verhalten** | **Zustandsdiagramm** | Endlicher Automat der mobilen Aufnahme (`idle`, `recording`, `evaluating`) | [Zustandsdiagramm.png](Dokumentation/Zustandsdiagramm.png) |
+| **Prozessablauf** | **Aktivitäts- / Sequenzdiagramm** | End-to-End-Datenfluss: Videoaufnahme $\rightarrow$ Normalisierung $\rightarrow$ Inferenz | [Aktivitaetsdiagramm.png](Dokumentation/Aktivitaetsdiagramm.png) |
+| **Inbetriebnahme** | **Deployment- & Installationsleitfaden** | Anleitung für Backend-Deployment, Netzwerkkonfiguration & APK-Build | [Deployment.pdf](Dokumentation/Deployment.pdf) |
+| **Bedienung** | **Bedienungsanleitung** | Schritt-für-Schritt-Anleitung zur Nutzung der Anwendung | [Bedienungsanleitung.txt](Dokumentation/Bedienungsanleitung.txt) |
+| **Code-Dokumentation** | **Backend Technische Doku** | Vollständige Modulübersicht aller 28 Python-Dateien | [Technische_Dokumentation_Backend.txt](Dokumentation/Technische_Dokumentation_Backend.md) |
+| **Code-Dokumentation** | **Frontend Technische Doku** | Vollständige Modulübersicht aller 11 Dart-Dateien | [Technische_Dokumentation_Frontend.txt](Dokumentation/Technische_Dokumentation_Frontend.md) |
 
 ---
 
@@ -124,6 +141,7 @@ sign_app/
 │   └── pubspec.yaml           # Flutter-Projektkonfiguration
 │├── Videos_vobereiten/        # Hilfsskript zur Datensatzaufnahme & Vorbereitung
 ├── Dokumentation/             # Ausführliche technische Dokumentationen & Anleitungen
+│   └── screenshots/           # Screenshots der App & Pipeline-Visualisierungen
 └── README.md                  # Zentrale Projektübersicht
 
 
