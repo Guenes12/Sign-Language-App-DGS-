@@ -1,0 +1,28 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+.venv/
+ 
+# Datensätze & Rohvideos (Sensible biometrische Daten)
+dataset/
+testvideos/
+temp/
+*.mp4
+*.mov
+*.avi
+*.mkv
+ 
+# Lokale IDEs & Betriebssysteme
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ 
+# Modell-Checkpoints & Logs
+*.log
+.pytest_cache/
