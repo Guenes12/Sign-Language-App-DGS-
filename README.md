@@ -76,13 +76,13 @@ Smartphones speichern Videos je nach Haltung oft mit abweichenden Rotationswinke
 - **Anatomische Lagekorrektur:** Das Backend prüft Stichprobenbilder über MediaPipe Pose auf die Lage der Schulterlinie und Kopfposition. Verdrehte Videos (0°, 90°, 180°, 270°) werden vor der Merkmalsextraktion automatisch aufrecht gedreht.
 - **Gleichmäßige Zeittaktung:** Unabhängig davon, wie schnell oder langsam eine Gebärde ausgeführt wurde, tastet das System die Videosequenz linear auf exakt 90 Frames ab.
 
+
 ### Merkmalsextraktion & Invarianz
 Um Bildrauschen und Hintergrundinformationen zu eliminieren, wird das Video auf wesentliche Landmark-Koordinaten verdichtet:
 - **MediaPipe Holistic:** Extrahiert 21 Handgelenke (der dominanten Hand), 7 Oberkörperpunkte sowie 7 Punkte der Mund- und Gesichtskontur (105 Rohmerkmale pro Zeitschritt).
 - **Geometrische Normalisierung:** Alle Punkte werden auf den Mittelpunkt zwischen linker und rechter Schulter zentriert und durch die Schulterbreite skaliert.
 - **Biomechanische Invarianzschicht:** Ein maßgeschneiderter Keras-Layer berechnet 159 Merkmale (relative Fingerabstände, lokale Handformen, Richtungsgeschwindigkeiten und vertikale Ebenen).
 
----
 
 ### Klassifikation & Modellverwaltung
 Die Sequenzklassifikation erfolgt über ein spezialisiertes neuronales Netzwerk:
@@ -90,7 +90,7 @@ Die Sequenzklassifikation erfolgt über ein spezialisiertes neuronales Netzwerk:
 - **Peak-Aware Temporal Pooling:** Kombiniert Global-Max-Pooling (zur Erfassung des prägnantesten Bewegungshöhepunkts) mit Global-Average-Pooling (Kontextinformation).
 - **Integrierte Metadaten:** Die Datei gesture_model.keras bündelt Modellarchitektur, trainierte Gewichte und das Klassenmapping (classes.json) in einem versionssicheren Archiv.
 
----
+
 
 ### Datensatz-Vorbereitung & Datenaugmentation (`video_preparation/`)
 Für das Training eines robusten neuronalen Netzes ist eine ausreichende Datenvarianz erforderlich. Im Verzeichnis [`Videos_vorbereiten/`](Videos_vorbereiten/) steht die automatisierte Batch-Datei (`.bat`) bereit, um Rohaufnahmen effizient zu verarbeiten und zu vervielfachen:
@@ -168,8 +168,11 @@ Voraussetzungen:
 
 Das Backend läuft anschließend unter http://localhost:8000. Die interaktive API-Dokumentation (Swagger UI) ist unter http://localhost:8000/docs abrufbar.
 
+
 ### 2. Frontend ausführen
-Voraussetzungen: Installiertes Flutter-SDK
+Voraussetzungen: 
+    Installiertes Flutter-SDK
+    
 1. In das Frontend-Verzeichnis wechseln:   
     cd frontend
 
@@ -186,6 +189,7 @@ Voraussetzungen: Installiertes Flutter-SDK
 
 ## Testausführung
 Die logischen Komponenten und Datenstrukturen werden über automatisierte Tests abgesichert:
+
 ### Backend-Tests
 Überprüft Sequenzdimensionen, Normalisierungslogik und Datenklassen:
 - Befehl (ausgeführt im Ordner backend):  
