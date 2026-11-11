@@ -137,7 +137,7 @@ sign_app/
 │   ├── lib/                   # UI-Screens, Controller & API-Dienste
 │   ├── test/                  # Automatisierte Unit- und Widget-Tests
 │   └── pubspec.yaml           # Flutter-Projektkonfiguration
-│├── Videos_vobereiten/        # Hilfsskript zur Datensatzaufnahme & Vorbereitung
+│├── Videos_vobereiten/        # Hilfsskript zur Datensatzvorbereitung
 ├── Dokumentation/             # Ausführliche technische Dokumentationen & Anleitungen
 │   └── screenshots/           # Screenshots der App
 └── README.md                  # Zentrale Projektübersicht
