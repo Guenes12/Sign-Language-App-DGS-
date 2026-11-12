@@ -15,19 +15,20 @@ Die Gebärden werden über die Smartphone-Kamera aufgenommen, mittels MediaPipe 
 ⸻
 
 Phase 0: Flutter UI & Architekturgrundlage
+
 ✔ Flutter-Projekt initial erstellt
 
 ✔ Grundlegende App-Struktur aufgebaut:
 
-Screens
+    - Screens
 
-Services
+    - Services
 
-Controller
+    - Controller
 
-Models
+    - Models
 
-Utilities
+    - Utilities
 
 ✔ HomeScreen implementiert
 
@@ -81,25 +82,18 @@ Phase 2: Datenerhebung für das eigene KI-Modell
 
 Aktuell verwendete Klassen:
 
-ja
+    - ja
 
-nein
+    - nein
 
-keine Ahnung
+    - keine Ahnung
 
-essen
-
-Not
-
-Angst
-
-danke
 
 ✔ Aufbau eines eigenen Datensatzes
 
 ✔ Aufnahme von ca. 250 Videos pro Klasse
 
-✔ Insgesamt ca. 1.750 Videos
+✔ Insgesamt ca. 750 Videos
 
 ✔ Verwendung eines Smartphones zur Datenerhebung
 
@@ -112,15 +106,15 @@ danke
 
 ✔  Untersuchung von Variationen hinsichtlich:
 
-Personen
+    - Personen
 
-Beleuchtung
+    - Beleuchtung
 
-Kameraposition
+    - Kameraposition
 
-Hintergrund
+    - Hintergrund
 
-Entfernung zur Kamera
+    - Entfernung zur Kamera
 
 Bewegungsgeschwindigkeit
 Ziel: Erstellung eines geeigneten Datensatzes für das Training eines eigenen Klassifikationsmodells.
